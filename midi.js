@@ -23,7 +23,7 @@ export function buttonPressed(func) {
 }
 
 // Load the samples
-const sampleUrls = ["bitboy.mp3", "Glowing.wav", "On.mp3", "intro.mp3"];
+const sampleUrls = ["Rocket.mp3", "Glowing.wav", "Filthy.wav", "Who.wav"];
 const buffers = [];
 
 sampleUrls.forEach((url) => {

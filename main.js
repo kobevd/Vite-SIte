@@ -59,7 +59,7 @@ let audioSource
 function startVisuals() {
    audioContext = getAudioContext();
    audioSource = getAudioSource();
-  analyser = audioContext.createAnalyser(); /* vanaf deze line alles laten staan */
+  analyser = audioContext.createAnalyser();
   audioSource.connect(analyser);
   analyser.connect(audioContext.destination);
   analyser.fftSize = 2048;
@@ -85,6 +85,7 @@ function animate(){
 }
 requestAnimationFrame(animate);
 }
+
 animate();
 
 getStart(startVisuals)
