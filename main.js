@@ -106,7 +106,7 @@ function drawVisualiser1(bufferLenght, x, barWidth, barHeight, dataArray){
 
 
 /* VORTEX */
-
+/*
 for (let i = 0; i < bufferLenght; i++) {
   barHeight = dataArray[i] * 2.5;
   ctx.save();
@@ -121,7 +121,7 @@ for (let i = 0; i < bufferLenght; i++) {
   x += barWidth;
   ctx.restore();
 }
-
+*/
 
 /* BIT STAAF MIDDLE CIRCLE OFZO */
 
