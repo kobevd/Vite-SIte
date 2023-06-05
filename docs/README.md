@@ -226,8 +226,38 @@ Nu moeten we nog de button verbinden met onze code. Dit doen we via javascript b
 # Makercase
 ![This is a alt text.](/docs/img/makercase.png "This is a sample image.")
 
-De doos is gemaakt via makercase. Na dat je alle afmetingen hebt ingegeven download de file. Deze kan je nu editten in illustrator.
+De doos is gemaakt via makercase. Na dat je alle afmetingen hebt ingegeven download de file. Deze kan je nu bewerken in illustrator.
 
 ![This is a alt text.](/docs/img/dxf.png "This is a sample image.")
 
 In illustrator heb ik nog de gaten toegevoed waar later de buttons in zouden komen en bovenaan een gat voor de kabels.
+
+
+# Tip
+
+Een goede tip is: bekijk eerst de basics van Canvas binnen Javascript. Dit gaat ervoor zorgen dat alles wat er voor de visualiser is geschreven duidelijker word!
+
+# Valkuil
+
+De enigste kleine valkuil is dat Google het moeilijk heeft met muziek files online te zetten. Ik heb heel lang gezocht naar een goede manier om dit te doen.
+```
+const sampleUrls = ["Rocket.mp3", "Glowing.wav", "Filthy.wav", "Who.wav"];
+const buffers = [];
+
+sampleUrls.forEach((url) => {
+  const request = new XMLHttpRequest();
+  request.open("GET", url, true);
+  request.responseType = "arraybuffer";
+
+  request.onload = function () {
+    audioContext.decodeAudioData(request.response, function (decodedData) {
+      buffers.push(decodedData);
+    });
+  };
+
+  request.send();
+});
+```
+
+
+ Let ook op, alle samples zijn nog eens geboost (luider) door de Google browser.
