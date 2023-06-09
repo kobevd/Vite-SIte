@@ -224,11 +224,11 @@ Nu moeten we nog de button verbinden met onze code. Dit doen we via javascript b
 
 
 # Makercase
-![This is a alt text.](/docs/img/makercase.png "This is a sample image.")
+![This is a alt text.](/docs/img/makercase.PNG "This is a sample image.")
 
 De doos is gemaakt via makercase. Na dat je alle afmetingen hebt ingegeven download de file. Deze kan je nu bewerken in illustrator.
 
-![This is a alt text.](/docs/img/dxf.png "This is a sample image.")
+![This is a alt text.](/docs/img/dxf.PNG "This is a sample image.")
 
 In illustrator heb ik nog de gaten toegevoed waar later de buttons in zouden komen en bovenaan een gat voor de kabels.
 
